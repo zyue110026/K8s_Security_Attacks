@@ -1,0 +1,21 @@
+{
+    "containers": [
+        {
+            "name": "attacker-container"
+            "securityContext": {
+                "runAsGroup": 0 or default value, //1
+                "runAsUser": 0, //2
+                "readOnlyRootFileSystem": false, //3
+                "allowPrivilegeEscalation": true, //4
+                "privileged": true,//5
+                "runAsNonRoot": false//6
+            }
+            
+        },
+        {
+            "name": "victim-container"  ///7
+            } // security context in victim-container is not important
+            
+        }
+    ]
+}

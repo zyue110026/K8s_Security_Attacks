@@ -1,0 +1,10 @@
+{
+    "hostIPC": true,   // 1
+    "securityContext": {
+        "runAsGroup": 0 or deault value, //2
+        "runAsUser": 0, //3
+        "readOnlyRootFileSystem": false, //4
+        "runAsNonRoot": false //5
+    },
+
+}

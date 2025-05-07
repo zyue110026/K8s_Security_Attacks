@@ -1,0 +1,15 @@
+{
+    "hostNetwork": true,   // 1
+    "securityContext": {
+        "runAsGroup": 0 or default value, //2
+        "runAsUser": 0, //3
+        "readOnlyRootFileSystem": false, //4
+        "runAsNonRoot": false //5
+        "allowPrivilegeEscalation": true, //6
+        "capabilities": {
+            "add": "- all"
+        }, //7
+        "privileged": true //8
+    },
+
+}

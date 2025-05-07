@@ -1,0 +1,22 @@
+{
+    
+    "securityContext": {
+        "runAsGroup": 0 or deault value, //1
+        "runAsUser": 0, //2
+        "readOnlyRootFileSystem": false, //3
+        "allowPrivilegeEscalation": true, //4
+        "privileged": true,//5
+        "runAsNonRoot": false//6
+    },
+    "volumeMounts": {
+        "mountPath": "/host-system" //6
+    },
+    "volumes": {
+        "hostPath": "/" //7
+    },
+    "privilegedRole": { //8
+        "apiGroup": "*",
+        "resources": "*",
+        "verbs": "*"
+    }
+}

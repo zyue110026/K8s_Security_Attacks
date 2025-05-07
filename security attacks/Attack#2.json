@@ -1,0 +1,15 @@
+{
+    "securityContext": {
+        "runAsGroup": 0 or deault value, //1
+        "runAsUser": 0, //2
+        "readOnlyRootFileSystem": false, //3
+        "allowPrivilegeEscalation": true, //4
+        "runAsNonRoot": false
+    },
+    "volumeMounts": {
+        "mountPath": "/var/run/docker.sock" //5
+    },
+    "volume": {
+        "hostPath": "/var/run/docker.sock" //6
+    },
+}

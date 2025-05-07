@@ -1,0 +1,14 @@
+{
+    "securityContext": {
+        "runAsGroup": 0 or deault value, //1
+        "runAsUser": 0, //2
+        "readOnlyRootFileSystem": false, //3
+        "runAsNonRoot": false //6
+    },
+    "automountServiceAccountToken": true, //4
+    "privilegedRole": { //5
+        "apiGroup": "*",
+        "resources": "*",
+        "verbs": "*"
+    }
+}

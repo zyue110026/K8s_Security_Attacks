@@ -1,0 +1,11 @@
+{
+    "securityContext": {
+        "runAsGroup": 0, //1
+        "runAsUser": 0, //2
+        "readOnlyRootFileSystem": false, //3
+        "runAsNonRoot": false, //4
+    },
+    "resources": {
+        "limits": "missing" //5
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "secret": {
+        "name": "hardcoded-secret",
+        "data": {
+            "hardcodedSecret": "HardcodedSecret"
+        }, //1
+    },
+    "env": {
+        "name": "HARDCODEDSECRET",
+        "valueFrom": {
+            "secretKeyRef": {
+                "name": "hardcode-secret",
+                "key": "hardcodedSecret"
+            }
+        }//2
+    }
+}

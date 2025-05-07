@@ -1,0 +1,12 @@
+{
+
+    "securityContext": {
+        "runAsGroup": 0 or default value, //1
+        "runAsUser": 0, //2
+        "readOnlyRootFileSystem": false, //3
+        "runAsNonRoot": false //4
+        "allowPrivilegeEscalation": true, //5
+        "privileged": true //6
+    },
+
+}

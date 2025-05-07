@@ -1,0 +1,494 @@
+Repo Name,File Path,File Type,IsPod,IfSecurityAttackExist,Attack#1,Attack#2,Attack#3,Attack#4,Attack#5,Attack#6,Attack#7,Attack#8,Attack#9,Attack#10,note,Output
+kubernetes-external-secrets,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-external-secrets\charts\kubernetes-external-secrets\templates\deployment.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+kubernetes-external-secrets,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-external-secrets\charts\kubernetes-external-secrets\templates\pdb.yaml,Helm,,0.0,,,,,,,,,,,,
+kubernetes-external-secrets,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-external-secrets\charts\kubernetes-external-secrets\templates\rbac.yaml,Helm,,0.0,,,,,,,,,,,,
+kubernetes-external-secrets,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-external-secrets\charts\kubernetes-external-secrets\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\alertmanager-secret.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\alertmanager-serviceAccount.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\grafana-config.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\grafana-dashboardDatasources.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\grafana-dashboardDefinitions.yaml,,,0.0,,,,,,,,,,,,"INSECURE_HTTP, NO_NETWORK_POLICY"
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\grafana-dashboardSources.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\grafana-deployment.yaml,,1.0,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\grafana-serviceAccount.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\ingress-alertmanager.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\ingress-grafana.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\ingress-prometheus.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\kube-state-metrics-clusterRole.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\kube-state-metrics-clusterRoleBinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\kube-state-metrics-deployment.yaml,,1.0,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\kube-state-metrics-serviceAccount.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\node-exporter-clusterRole.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\node-exporter-clusterRoleBinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\node-exporter-daemonset.yaml,,1.0,0.0,,,,,,,,,,,,"INSECURE_HTTP, NO_NETWORK_POLICY, TRUE_HOST_PID, TRUE_HOST_NET"
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\node-exporter-serviceAccount.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-adapter-clusterRole.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-adapter-clusterRoleAggregatedMetricsReader.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-adapter-clusterRoleBinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-adapter-clusterRoleBindingDelegator.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-adapter-clusterRoleServerResources.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-adapter-configMap.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-adapter-deployment.yaml,,1.0,1.0,,,,1.0,,,,,,,,"INSECURE_HTTP, NO_NETWORK_POLICY"
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-adapter-roleBindingAuthReader.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-adapter-serviceAccount.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-clusterRole.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-clusterRoleBinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-roleBindingConfig.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-roleBindingSpecificNamespaces.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-roleConfig.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-roleSpecificNamespaces.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\prometheus-serviceAccount.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\setup\prometheus-operator-0podmonitorCustomResourceDefinition.yaml,,,0.0,,,,,,,,,,,,
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\setup\prometheus-operator-clusterRole.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\setup\prometheus-operator-clusterRoleBinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\setup\prometheus-operator-deployment.yaml,,1.0,0.0,,,,,,,,,,,,"INSECURE_HTTP, NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\manifests\setup\prometheus-operator-serviceAccount.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\samples\sample-pv-grafana.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+cluster-monitoring,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\cluster-monitoring\samples\sample-pv-prometheus.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\default\manager_auth_proxy_patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"INSECURE_HTTP, NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\default\manager_config_patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\manager\manager.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\rbac\auth_proxy_client_clusterrole.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\rbac\auth_proxy_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\rbac\auth_proxy_role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\rbac\edgedevice_editor_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\rbac\edgedevice_viewer_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\rbac\leader_election_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\rbac\leader_election_role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\rbac\role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\rbac\role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\rbac\service_account.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\rbac\telemetryservice_editor_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\config\rbac\telemetryservice_viewer_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\install\config_default.yaml,,1.0,0.0,,,,,,,,,,,,
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\install\config_sa.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\k8s\crd\install\shifu_install.yml,,1.0,0.0,,,,,,,,,,,,
+shifu,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\shifu\pkg\telemetryservice\install\telemetryservice_install.yaml,,,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\default\manager_auth_proxy_patch.yaml,,1.0,0.0,,,,,,,,,,,,"INSECURE_HTTP, NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\default\manager_config_patch.yaml,,1.0,1.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\manager\manager.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\rbac\auth_proxy_client_clusterrole.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\rbac\auth_proxy_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\rbac\auth_proxy_role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\rbac\clusterinsight_editor_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\rbac\clusterinsight_viewer_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\rbac\leader_election_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\rbac\leader_election_role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\rbac\pluginsubscription_editor_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\rbac\pluginsubscription_viewer_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\rbac\role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\rbac\role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\config\rbac\service_account.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\kubeeye.yaml,,1.0,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\kubeeye_plugin_kubebench.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\kubeeye_plugin_kubehunter.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\kubeeye_plugin_kubescape.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\charts\templates\deployment.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\charts\templates\leader-election-role.yaml,Helm,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\charts\templates\leaderelection-rolebinding.yaml,Helm,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\charts\templates\manager-configmap.yaml,Helm,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\charts\templates\manager-role.yaml,Helm,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\charts\templates\manager-rolebinding.yaml,Helm,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\charts\templates\metricsreader-clusterrole.yaml,Helm,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\charts\templates\proxy-clusterrole.yaml,Helm,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\charts\templates\proxy-rolebinding.yaml,Helm,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\deploy\charts\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\pkg\expend\deploymentfiles\kubebench.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\pkg\expend\deploymentfiles\kubehunter.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\pkg\expend\deploymentfiles\kubescape.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\pkg\expend\deploymentfiles\npd-resources.yaml,,1.0,1.0,,,,,,,,,1.0,,,"SEC_CONT_OVER_PRIVIL, NO_NETWORK_POLICY"
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\plugins\kubebench\cfg\ack-1.0\policies.yaml,,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\plugins\kubebench\cfg\cis-1.5\policies.yaml,,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\plugins\kubebench\cfg\cis-1.6\policies.yaml,,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\plugins\kubebench\cfg\gke-1.0\policies.yaml,,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\plugins\kubebench\cfg\gke-1.2.0\policies.yaml,,,0.0,,,,,,,,,,,,
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\plugins\kubebench\deploy\kubebench.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\plugins\kubehunter\deploy\kubehunter.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubeeye,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubeeye\plugins\kubescapeplugin\deploy\kubescape.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\charts\podinfo\templates\deployment.yaml,Helm,1.0,1.0,,,,1.0,,,,,,,,
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\charts\podinfo\templates\hpa.yaml,Helm,,0.0,,,,,,,,,,,,
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\charts\podinfo\templates\ingress.yaml,Helm,,0.0,,,,,,,,,,,,
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\charts\podinfo\templates\pdb.yaml,Helm,,0.0,,,,,,,,,,,,
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\charts\podinfo\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\charts\podinfo\templates\redis\config.yaml,Helm,,0.0,,,,,,,,,,,,
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\charts\podinfo\templates\redis\deployment.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\bases\backend\deployment.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\bases\backend\hpa.yaml,,,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\bases\cache\deployment.yaml,,1.0,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\bases\frontend\deployment.yaml,,,0.0,,,,,,,,,,,,"INSECURE_HTTP, NO_NETWORK_POLICY"
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\bases\frontend\hpa.yaml,,,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\secure\backend\deployment.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\secure\backend\hpa.yaml,,,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\secure\common\reconciler-rbac.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\secure\common\service-account.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\secure\frontend\deployment.yaml,,1.0,0.0,,,,,,,,,,,,"INSECURE_HTTP, NO_NETWORK_POLICY, ALLOW_PRIVI"
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\secure\frontend\hpa.yaml,,,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\webapp\backend\deployment.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\webapp\backend\hpa.yaml,,,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\webapp\common\reconciler-rbac.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\webapp\common\service-account.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\webapp\frontend\deployment.yaml,,1.0,0.0,,,,,,,,,,,,"INSECURE_HTTP, NO_NETWORK_POLICY"
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\deploy\webapp\frontend\hpa.yaml,,,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\kustomize\deployment.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+podinfo,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\podinfo\kustomize\hpa.yaml,,,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\reloader.yaml,,1.0,0.0,,,,,,,,,,,,"NO_DEFAULT_NSPACE, NO_NETWORK_POLICY"
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\chart\reloader\templates\clusterrole.yaml,Helm,,0.0,,,,,,,,,,,,
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\chart\reloader\templates\clusterrolebinding.yaml,Helm,,0.0,,,,,,,,,,,,
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\chart\reloader\templates\deployment.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\chart\reloader\templates\poddisruptionbudget.yaml,Helm,,0.0,,,,,,,,,,,,
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\chart\reloader\templates\podmonitor.yaml,Helm,,0.0,,,,,,,,,,,,
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\chart\reloader\templates\role.yaml,Helm,,0.0,,,,,,,,,,,,
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\chart\reloader\templates\rolebinding.yaml,Helm,,0.0,,,,,,,,,,,,
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\chart\reloader\templates\secret.yaml,Helm,,0.0,,,,,,,,,,,,
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\chart\reloader\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\chart\reloader\templates\verticalpodautoscaler.yaml,Helm,,0.0,,,,,,,,,,,,
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\manifests\clusterrole.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\manifests\clusterrolebinding.yaml,,,0.0,,,,,,,,,,,,"NO_DEFAULT_NSPACE, NO_NETWORK_POLICY"
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\manifests\deployment.yaml,,1.0,0.0,,,,,,,,,,,,"NO_DEFAULT_NSPACE, NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+Reloader,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\Reloader\deployments\kubernetes\manifests\serviceaccount.yaml,,,0.0,,,,,,,,,,,,"NO_DEFAULT_NSPACE, NO_NETWORK_POLICY"
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\core-install.yaml,,1.0,0.0,,,,,,,,,,,,
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\install.yaml,,1.0,0.0,,,,,,,,,,,,
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\namespace-install.yaml,,1.0,0.0,,,,,,,,,,,,
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\application-controller\argocd-application-controller-statefulset.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\application-controller-deployment\argocd-application-controller-deployment.yaml,,1.0,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\application-controller-deployment\argocd-application-controller-statefulset.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\application-controller-roles\argocd-application-controller-role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\application-controller-roles\argocd-application-controller-rolebinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\application-controller-roles\argocd-application-controller-sa.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\applicationset-controller\argocd-applicationset-controller-deployment.yaml,,1.0,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\applicationset-controller\argocd-applicationset-controller-role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\applicationset-controller\argocd-applicationset-controller-rolebinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\applicationset-controller\argocd-applicationset-controller-sa.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\config\argocd-cm.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\config\argocd-cmd-params-cm.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\config\argocd-gpg-keys-cm.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\config\argocd-rbac-cm.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\config\argocd-secret.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\config\argocd-ssh-known-hosts-cm.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\config\argocd-tls-certs-cm.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\dex\argocd-dex-server-deployment.yaml,,1.0,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\dex\argocd-dex-server-role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\dex\argocd-dex-server-rolebinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\dex\argocd-dex-server-sa.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\notification\argocd-notifications-cm.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\notification\argocd-notifications-controller-deployment.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\notification\argocd-notifications-controller-role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\notification\argocd-notifications-controller-rolebinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\notification\argocd-notifications-controller-sa.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\notification\argocd-notifications-secret.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\redis\argocd-redis-deployment.yaml,,1.0,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\redis\argocd-redis-sa.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\repo-server\argocd-repo-server-deployment.yaml,,,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\repo-server\argocd-repo-server-sa.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\server\argocd-server-deployment.yaml,,,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\server\argocd-server-role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\server\argocd-server-rolebinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\base\server\argocd-server-sa.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\cluster-rbac\application-controller\argocd-application-controller-clusterrole.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\cluster-rbac\application-controller\argocd-application-controller-clusterrolebinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\cluster-rbac\applicationset-controller\argocd-applicationset-controller-clusterrole.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\cluster-rbac\applicationset-controller\argocd-applicationset-controller-clusterrolebinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\cluster-rbac\server\argocd-server-clusterrole.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\cluster-rbac\server\argocd-server-clusterrolebinding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\ha\install.yaml,,1.0,0.0,,,,,,,,,,,,
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\ha\namespace-install.yaml,,1.0,0.0,,,,,,,,,,,,
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\ha\base\controller-deployment\argocd-application-controller-statefulset.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\ha\base\controller-deployment\argocd-cmd-params-cm.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\ha\base\controller-deployment\argocd-repo-server-deployment.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\ha\base\controller-deployment\argocd-server-deployment.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\ha\base\overlays\argocd-application-controller-statefulset.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\ha\base\overlays\argocd-cmd-params-cm.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\ha\base\overlays\argocd-repo-server-deployment.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\ha\base\overlays\argocd-server-deployment.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\ha\base\redis-ha\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\manifests\ha\base\redis-ha\chart\upstream.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+argo-cd,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\argo-cd\notifications_catalog\install.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\base\ingressclass.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\base\kong-ingress-dbless.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\base\serviceaccount.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\components\konnect\manager.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\components\manager_dev_webhook\manager_webhook_listen_patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\components\manager_dev_webhook\manager_webhook_secret.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\crd\bases\configuration.konghq.com_ingressclassparameterses.yaml,,,0.0,,,,,,,,,,,,
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\default\manager_auth_proxy_patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"INSECURE_HTTP, NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\default\manager_config_patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\dev\manager_dev.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\manager\manager.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\prometheus\monitor.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\auth_proxy_client_clusterrole.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\auth_proxy_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\auth_proxy_role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\kongclusterplugin_editor_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\kongclusterplugin_viewer_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\kongconsumer_editor_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\kongconsumer_viewer_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\kongingress_editor_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\kongingress_viewer_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\kongplugin_editor_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\kongplugin_viewer_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\leader_election_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\leader_election_role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\tcpingress_editor_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\tcpingress_viewer_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\udpingress_editor_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\udpingress_viewer_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\crds\role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\crds\role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\gateway\role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\rbac\gateway\role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\enterprise\kong-enterprise.yaml,,1.0,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\enterprise-postgres\kong-enterprise-job.yaml,,1.0,1.0,,,1.0,1.0,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\enterprise-postgres\kong-enterprise.yaml,,1.0,1.0,,,1.0,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\konnect\base\manager.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\konnect\debug\manager_debug.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\multi-gw\base\gateway_deployment.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\multi-gw\base\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\multi-gw\base\manager_multi_gateway_patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\multi-gw\debug\manager_debug.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\multi-gw\dev\manager.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\multi-gw\oss\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\multi-gw-postgres\base\gateway_deployment.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\multi-gw-postgres\base\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\multi-gw-postgres\base\manager_multi_gateway_patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\multi-gw-postgres\dev\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\multi-gw-postgres\oss\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\postgres\kong-ingress-postgres.yaml,,1.0,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\postgres\kustomization.yaml,,,,,,,,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\postgres\migration.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\postgres\postgres.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+kubernetes-ingress-controller,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kubernetes-ingress-controller\config\variants\postgres\wait\kong-ingress-postgres.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\apiserver\deploy\base\insecure\apiserver.yaml,,1.0,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\apiserver\deploy\base\secure\apiserver.yaml,,1.0,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\apiserver\deploy\local\insecure\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\apiserver\deploy\local\secure\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\apiserver\deploy\prometheus\ray_cluster_pod_monitor.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\config\prometheus\podMonitor.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-apiserver\templates\deployment.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-apiserver\templates\ingress.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-apiserver\templates\role.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-apiserver\templates\rolebinding.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-apiserver\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-operator\templates\deployment.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-operator\templates\leader_election_role.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-operator\templates\leader_election_role_binding.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-operator\templates\multiple_namespaces_role.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-operator\templates\multiple_namespaces_rolebinding.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-operator\templates\ray_rayjob_editor_role.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-operator\templates\ray_rayjob_viewer_role.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-operator\templates\ray_rayservice_editor_role.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-operator\templates\ray_rayservice_viewer_role.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-operator\templates\role.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-operator\templates\rolebinding.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\helm-chart\kuberay-operator\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\install\prometheus\overrides.yaml,,,0.0,,,,,,,,,,,,
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\default-with-webhooks\manager_webhook_patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\manager\manager.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\rbac\leader_election_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\rbac\leader_election_role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\rbac\ray_rayjob_editor_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\rbac\ray_rayjob_viewer_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\rbac\ray_rayservice_editor_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\rbac\ray_rayservice_viewer_role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\rbac\role.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\rbac\role_binding.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\rbac\service_account.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ingress-rayclient-tls.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-cluster-alb-ingress.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-cluster.autoscaler.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-cluster.external-redis-uri.yaml,,1.0,1.0,,,1.0,1.0,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-cluster.external-redis.yaml,,1.0,1.0,,,1.0,1.0,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-cluster.head-command.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-cluster.heterogeneous.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-cluster.py-spy.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-cluster.separate-ingress.yaml,,1.0,0.0,,,,,,,,,,,,"NO_DEFAULT_NSPACE, NO_NETWORK_POLICY"
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-cluster.tls.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-job.batch-inference.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-job.custom-head-svc.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-job.resources.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-job.sample.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-job.shutdown.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-pod.tls.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_SECU_CONTEXT, NO_DEFAULT_NSPACE, NO_RESO, NO_NETWORK_POLICY"
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-service-alb-ingress.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-service.high-availability-locust.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\samples\ray-service.high-availability.yaml,,1.0,1.0,,,1.0,1.0,,,,,,,,"INSECURE_HTTP, NO_NETWORK_POLICY"
+kuberay,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kuberay\ray-operator\config\security\ray-cluster.pod-security.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kanister,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kanister\bundle.yaml,,1.0,1.0,,,,1.0,1.0,,,,,,,Error: command execute failed
+kanister,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kanister\helm\fdb-operator\templates\secrets.yaml,Helm,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kanister,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kanister\helm\fdb-operator\templates\manager\secret.yaml,Helm,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+kanister,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kanister\helm\fdb-operator\templates\manager\statefulset.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+kanister,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kanister\helm\fdb-operator\templates\rbac\rbac_role.yaml,Helm,,0.0,,,,,,,,,,,,
+kanister,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kanister\helm\fdb-operator\templates\rbac\rbac_role_binding.yaml,Helm,,0.0,,,,,,,,,,,,
+kanister,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kanister\helm\kanister-operator\templates\deployment.yaml,Helm,1.0,1.0,,,1.0,,,,,,,,,
+kanister,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kanister\helm\kanister-operator\templates\rbac.yaml,Helm,,0.0,,,,,,,,,,,,
+kanister,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kanister\helm\kanister-operator\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+kanister,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kanister\helm\kanister-operator\templates\validating-webhook.yaml,Helm,,0.0,,,,,,,,,,,,
+kanister,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\kanister\helm\profile\templates\profile.yaml,Helm,,0.0,,,,,,,,,,,,
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\bases\helm-controller\account.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\bases\helm-controller\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\bases\image-automation-controller\account.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\bases\image-automation-controller\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\bases\image-reflector-controller\account.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\bases\image-reflector-controller\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\bases\kustomize-controller\account.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\bases\kustomize-controller\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\bases\notification-controller\account.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\bases\notification-controller\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\bases\source-controller\account.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\bases\source-controller\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\azure\config-patches.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\azure\reconcile-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\generic\config-patches.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\generic\reconcile-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\generic\secret-azure-credentials.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\_base\kubectl-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\_base\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\_base\sync.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\_cronjobs\azure\config-patches.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\_cronjobs\azure\reconcile-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\_cronjobs\generic\config-patches.yaml,,0.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\_cronjobs\generic\reconcile-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\_cronjobs\generic\secret-azure-credentials.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\_cronjobs\_base\kubectl-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\_cronjobs\_base\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\eventhub-credentials-sync\_cronjobs\_base\sync.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\aws\config-patches.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\aws\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\aws\reconcile-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\azure\config-patches.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\azure\reconcile-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\gcp\config-patches.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\gcp\reconcile-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_base\kubectl-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_base\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_base\sync.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_cronjobs\aws\config-patches.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_cronjobs\aws\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_cronjobs\aws\reconcile-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_cronjobs\azure\config-patches.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_cronjobs\azure\reconcile-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_cronjobs\gcp\config-patches.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_cronjobs\gcp\reconcile-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_cronjobs\_base\kubectl-patch.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_cronjobs\_base\kustomization.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\integrations\registry-credentials-sync\_cronjobs\_base\sync.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\rbac\controller.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\rbac\edit.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\rbac\reconciler.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+flux2,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\flux2\manifests\rbac\view.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\common\scripts\metallb-native.yaml,,1.0,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\base\templates\reader-serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateway\templates\poddisruptionbudget.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateway\templates\role.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateway\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateway\templates\deployment.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-egress\templates\autoscale.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-egress\templates\deployment.yaml,Helm,1.0,1.0,,,,,,,,,1.0,1.0,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-egress\templates\injected-deployment.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-egress\templates\poddisruptionbudget.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-egress\templates\role.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-egress\templates\rolebindings.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-egress\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-ingress\templates\autoscale.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-ingress\templates\deployment.yaml,Helm,1.0,1.0,,,,,,,,,1.0,1.0,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-ingress\templates\injected-deployment.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-ingress\templates\poddisruptionbudget.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-ingress\templates\role.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-ingress\templates\rolebindings.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\gateways\istio-ingress\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-cni\templates\clusterrole.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-cni\templates\clusterrolebinding.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-cni\templates\configmap-cni.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-cni\templates\daemonset.yaml,Helm,1.0,1.0,,,,1.0,,,,,1.0,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-cni\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\files\kube-gateway.yaml,,1.0,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\files\waypoint.yaml,,1.0,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\autoscale.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\clusterrole.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\clusterrolebinding.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\configmap-jwks.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\configmap.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\deployment.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\istiod-injector-configmap.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\poddisruptionbudget.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\reader-clusterrole.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\reader-clusterrolebinding.yaml,Helm,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\role.yaml,Helm,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\rolebinding.yaml,Helm,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-control\istio-discovery\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-operator\templates\clusterrole.yaml,Helm,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-operator\templates\clusterrole_binding.yaml,Helm,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-operator\templates\deployment.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istio-operator\templates\service_account.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istiod-remote\templates\clusterrole.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istiod-remote\templates\clusterrolebinding.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istiod-remote\templates\configmap.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istiod-remote\templates\istiod-injector-configmap.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istiod-remote\templates\reader-clusterrole.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istiod-remote\templates\reader-clusterrolebinding.yaml,Helm,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istiod-remote\templates\reader-serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istiod-remote\templates\role.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istiod-remote\templates\rolebinding.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\istiod-remote\templates\serviceaccount.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\ztunnel\templates\daemonset.yaml,Helm,1.0,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\manifests\charts\ztunnel\templates\rbac.yaml,Helm,,0.0,,,,,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\operator\samples\pilot-advanced-override.yaml,,,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\prow\config\calico.yaml,,1.0,1.0,,,,1.0,,,,,,,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\prow\config\metrics\metrics.yaml,,1.0,0.0,,,,,,,,,1.0,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\addons\grafana.yaml,,1.0,1.0,,,,1.0,,,,,,,,"INSECURE_HTTP, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\addons\jaeger.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\addons\kiali.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\addons\loki.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\addons\prometheus.yaml,,1.0,1.0,,,,1.0,,,,,,,,"INSECURE_HTTP, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\addons\extras\prometheus-operator.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\addons\extras\skywalking.yaml,,1.0,1.0,,,,1.0,,,,,,,,"INSECURE_HTTP, NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\addons\extras\zipkin.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\ambient-argo\application\details.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\ambient-argo\application\productpage.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\ambient-argo\application\ratings.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\ambient-argo\application\reviews.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-db.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-details-dualstack.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-details-v2.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-details.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-dualstack.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-ingress.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-mysql.yaml,,1.0,1.0,,,1.0,1.0,,,,,,,,"WITHIN_MANIFEST_SECRET, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-psa.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-ratings-dualstack.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-ratings-v2-mysql-vm.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-ratings-v2-mysql.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-ratings-v2.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-ratings.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo-reviews-v2.yaml,,1.0,1.0,,,,1.0,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\bookinfo\platform\kube\bookinfo.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\custom-bootstrap\custom-bootstrap.yaml,,,0.0,,,,,,,,,,,,"NO_DEFAULT_NSPACE, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\extauthz\ext-authz.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\extauthz\local-ext-authz.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\grpc-echo\grpc-echo.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\health-check\liveness-command.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\health-check\liveness-http-same-port.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\helloworld\helloworld-dual-stack.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\helloworld\helloworld.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\httpbin\httpbin-nodeport.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\httpbin\httpbin-vault.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\httpbin\httpbin.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\httpbin\sample-client\fortio-deploy.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\jwt-server\jwt-server.yaml,,1.0,1.0,,,,1.0,,,,,,,,"WITHIN_MANIFEST_SECRET, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\open-telemetry\otel.yaml,,1.0,0.0,,,,,,,,,,,,"INSECURE_HTTP, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\open-telemetry\loki\otel.yaml,,1.0,0.0,,,,,,,,,,,,"INSECURE_HTTP, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\ratelimit\rate-limit-service.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\security\psp\sidecar-psp.yaml,,,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\security\spire\istio-spire-config.yaml,,,0.0,,,,,,,,,,,,"NO_ROLLING_UPDATE, NO_NETWORK_POLICY"
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\security\spire\sleep-spire.yaml,,1.0,0.0,,,,,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\security\spire\spire-quickstart.yaml,,1.0,1.0,,,,1.0,,1.0,,,1.0,1.0,,
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\sleep\notsleep.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\sleep\sleep-vault.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\sleep\sleep.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\tcp-echo\tcp-echo-dual-stack.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\tcp-echo\tcp-echo-ipv4.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\tcp-echo\tcp-echo-ipv6.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\tcp-echo\tcp-echo-services.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\tcp-echo\tcp-echo.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY
+istio,D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos\istio\samples\websockets\app.yaml,,1.0,1.0,,,,1.0,,,,,,,,NO_NETWORK_POLICY

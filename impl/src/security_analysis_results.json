@@ -1,0 +1,435 @@
+{
+  "ATTACK3_ENV_INFO_HARDCODED_SECRET": {
+    "attack_details": {
+      "secret": {
+        "name": "hardcode-secret",
+        "data": {
+          "key": [
+            "user",
+            "password",
+            "passwd",
+            "pwd",
+            "pswd",
+            "psswd"
+          ]
+        }
+      },
+      "env": {
+        "valueFrom": {
+          "secretKeyRef": {
+            "name": "hardcode-secret",
+            "key": [
+              "user",
+              "password",
+              "passwd",
+              "pwd",
+              "pswd",
+              "psswd"
+            ]
+          }
+        }
+      }
+    },
+    "test_cases": {
+      "test_case_1": {
+        "hostPID": "true",
+        "hostIPC": "true",
+        "hostNetwork": "true",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "true",
+        "allowPrivilegeEscalation": "true",
+        "privileged": "true",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "present",
+        "privileged_resources": "present",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "true",
+        "resources_limits": "present",
+        "mount_host_system": "present",
+        "docker_sock_volume": "present",
+        "hardcoded_secrets": "present",
+        "hardcoded_secrets_env_ref": "present",
+        "capabilities_add_all": "present",
+        "at_least_two_containers": "present"
+      },
+      "test_case_2": {
+        "hostPID": "true",
+        "hostIPC": "true",
+        "hostNetwork": "true",
+        "runAsUser": "non-zero",
+        "readOnlyRootFilesystem": "true",
+        "allowPrivilegeEscalation": "false",
+        "privileged": "false",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "missing",
+        "privileged_resources": "missing",
+        "privileged_verbs": "missing",
+        "automountServiceAccountToken": "true",
+        "resources_limits": "present",
+        "mount_host_system": "missing",
+        "docker_sock_volume": "missing",
+        "hardcoded_secrets": "present",
+        "hardcoded_secrets_env_ref": "present",
+        "capabilities_add_all": "missing",
+        "at_least_two_containers": "present"
+      },
+      "test_case_3": {
+        "hostPID": "false",
+        "hostIPC": "false",
+        "hostNetwork": "false",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "allowPrivilegeEscalation": "false",
+        "privileged": "false",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "missing",
+        "privileged_resources": "present",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "false",
+        "resources_limits": "missing",
+        "mount_host_system": "missing",
+        "docker_sock_volume": "present",
+        "hardcoded_secrets": "present",
+        "hardcoded_secrets_env_ref": "present",
+        "capabilities_add_all": "present",
+        "at_least_two_containers": "present"
+      },
+      "test_case_4": {
+        "hostPID": "false",
+        "hostIPC": "false",
+        "hostNetwork": "false",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "allowPrivilegeEscalation": "false",
+        "privileged": "false",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "missing",
+        "privileged_resources": "missing",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "true",
+        "resources_limits": "missing",
+        "mount_host_system": "present",
+        "docker_sock_volume": "missing",
+        "hardcoded_secrets": "present",
+        "hardcoded_secrets_env_ref": "present",
+        "capabilities_add_all": "missing",
+        "at_least_two_containers": "missing"
+      }
+    }
+  },
+  "ATTACK6_HOSTPID": {
+    "attack_details": {
+      "hostPID": "true"
+    },
+    "test_cases": {
+      "test_case_1": {
+        "hostPID": "true",
+        "hostIPC": "true",
+        "hostNetwork": "true",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "true",
+        "allowPrivilegeEscalation": "true",
+        "privileged": "true",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "present",
+        "privileged_resources": "present",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "true",
+        "resources_limits": "present",
+        "mount_host_system": "present",
+        "docker_sock_volume": "present",
+        "hardcoded_secrets": "present",
+        "hardcoded_secrets_env_ref": "present",
+        "capabilities_add_all": "present",
+        "at_least_two_containers": "present"
+      },
+      "test_case_2": {
+        "hostPID": "true",
+        "hostIPC": "true",
+        "hostNetwork": "true",
+        "runAsUser": "non-zero",
+        "readOnlyRootFilesystem": "false",
+        "allowPrivilegeEscalation": "false",
+        "privileged": "true",
+        "runAsNonRoot": "true",
+        "privileged_apiGroup": "present",
+        "privileged_resources": "missing",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "false",
+        "resources_limits": "present",
+        "mount_host_system": "missing",
+        "docker_sock_volume": "present",
+        "hardcoded_secrets": "missing",
+        "hardcoded_secrets_env_ref": "present",
+        "capabilities_add_all": "missing",
+        "at_least_two_containers": "missing"
+      },
+      "test_case_3": {
+        "hostPID": "true",
+        "hostIPC": "true",
+        "hostNetwork": "true",
+        "runAsUser": "non-zero",
+        "readOnlyRootFilesystem": "true",
+        "allowPrivilegeEscalation": "false",
+        "privileged": "false",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "missing",
+        "privileged_resources": "missing",
+        "privileged_verbs": "missing",
+        "automountServiceAccountToken": "true",
+        "resources_limits": "present",
+        "mount_host_system": "missing",
+        "docker_sock_volume": "missing",
+        "hardcoded_secrets": "present",
+        "hardcoded_secrets_env_ref": "present",
+        "capabilities_add_all": "missing",
+        "at_least_two_containers": "present"
+      },
+      "test_case_4": {
+        "hostPID": "true",
+        "hostIPC": "true",
+        "hostNetwork": "true",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "allowPrivilegeEscalation": "true",
+        "privileged": "false",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "missing",
+        "privileged_resources": "missing",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "false",
+        "resources_limits": "missing",
+        "mount_host_system": "missing",
+        "docker_sock_volume": "missing",
+        "hardcoded_secrets": "present",
+        "hardcoded_secrets_env_ref": "missing",
+        "capabilities_add_all": "present",
+        "at_least_two_containers": "missing"
+      }
+    }
+  },
+  "ATTACK4_DOS_CPU_MEMORY": {
+    "attack_details": {
+      "securityContext": {
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "runAsNonRoot": "false"
+      },
+      "resources": {
+        "limits": "missing"
+      }
+    },
+    "test_cases": {
+      "test_case_1": {
+        "hostPID": "false",
+        "hostIPC": "false",
+        "hostNetwork": "false",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "allowPrivilegeEscalation": "true",
+        "privileged": "true",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "present",
+        "privileged_resources": "missing",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "false",
+        "resources_limits": "missing",
+        "mount_host_system": "present",
+        "docker_sock_volume": "present",
+        "hardcoded_secrets": "missing",
+        "hardcoded_secrets_env_ref": "present",
+        "capabilities_add_all": "present",
+        "at_least_two_containers": "missing"
+      },
+      "test_case_2": {
+        "hostPID": "true",
+        "hostIPC": "true",
+        "hostNetwork": "true",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "allowPrivilegeEscalation": "true",
+        "privileged": "false",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "missing",
+        "privileged_resources": "missing",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "false",
+        "resources_limits": "missing",
+        "mount_host_system": "missing",
+        "docker_sock_volume": "missing",
+        "hardcoded_secrets": "present",
+        "hardcoded_secrets_env_ref": "missing",
+        "capabilities_add_all": "present",
+        "at_least_two_containers": "missing"
+      },
+      "test_case_3": {
+        "hostPID": "false",
+        "hostIPC": "false",
+        "hostNetwork": "false",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "allowPrivilegeEscalation": "false",
+        "privileged": "true",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "missing",
+        "privileged_resources": "present",
+        "privileged_verbs": "missing",
+        "automountServiceAccountToken": "true",
+        "resources_limits": "missing",
+        "mount_host_system": "present",
+        "docker_sock_volume": "present",
+        "hardcoded_secrets": "missing",
+        "hardcoded_secrets_env_ref": "missing",
+        "capabilities_add_all": "missing",
+        "at_least_two_containers": "present"
+      },
+      "test_case_4": {
+        "hostPID": "false",
+        "hostIPC": "false",
+        "hostNetwork": "false",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "allowPrivilegeEscalation": "false",
+        "privileged": "false",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "missing",
+        "privileged_resources": "present",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "false",
+        "resources_limits": "missing",
+        "mount_host_system": "missing",
+        "docker_sock_volume": "present",
+        "hardcoded_secrets": "present",
+        "hardcoded_secrets_env_ref": "present",
+        "capabilities_add_all": "present",
+        "at_least_two_containers": "present"
+      },
+      "test_case_5": {
+        "hostPID": "false",
+        "hostIPC": "false",
+        "hostNetwork": "false",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "allowPrivilegeEscalation": "false",
+        "privileged": "false",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "missing",
+        "privileged_resources": "missing",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "true",
+        "resources_limits": "missing",
+        "mount_host_system": "present",
+        "docker_sock_volume": "missing",
+        "hardcoded_secrets": "present",
+        "hardcoded_secrets_env_ref": "present",
+        "capabilities_add_all": "missing",
+        "at_least_two_containers": "missing"
+      }
+    }
+  },
+  "ATTACK9_PRIVILEGED": {
+    "attack_details": {
+      "securityContext": {
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "runAsNonRoot": "false",
+        "allowPrivilegeEscalation": "true",
+        "privileged": "true"
+      }
+    },
+    "test_cases": {
+      "test_case_1": {
+        "hostPID": "false",
+        "hostIPC": "false",
+        "hostNetwork": "false",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "allowPrivilegeEscalation": "true",
+        "privileged": "true",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "present",
+        "privileged_resources": "missing",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "false",
+        "resources_limits": "missing",
+        "mount_host_system": "present",
+        "docker_sock_volume": "present",
+        "hardcoded_secrets": "missing",
+        "hardcoded_secrets_env_ref": "present",
+        "capabilities_add_all": "present",
+        "at_least_two_containers": "missing"
+      }
+    }
+  },
+  "ATTACK7_HOSTIPC": {
+    "attack_details": {
+      "hostIPC": "true",
+      "securityContext": {
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "runAsNonRoot": "false"
+      }
+    },
+    "test_cases": {
+      "test_case_1": {
+        "hostPID": "true",
+        "hostIPC": "true",
+        "hostNetwork": "true",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "allowPrivilegeEscalation": "true",
+        "privileged": "false",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "missing",
+        "privileged_resources": "missing",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "false",
+        "resources_limits": "missing",
+        "mount_host_system": "missing",
+        "docker_sock_volume": "missing",
+        "hardcoded_secrets": "present",
+        "hardcoded_secrets_env_ref": "missing",
+        "capabilities_add_all": "present",
+        "at_least_two_containers": "missing"
+      }
+    }
+  },
+  "ATTACK5_RBAC_LEAST_PRIILEGE": {
+    "attack_details": {
+      "securityContext": {
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "runAsNonRoot": "false"
+      },
+      "automountServiceAccountToken": "true",
+      "privilegedRole": {
+        "apiGroup": "*",
+        "resources": "*",
+        "verbs": "*"
+      }
+    },
+    "test_cases": {
+      "test_case_1": {
+        "hostPID": "false",
+        "hostIPC": "false",
+        "hostNetwork": "false",
+        "runAsUser": 0,
+        "readOnlyRootFilesystem": "false",
+        "allowPrivilegeEscalation": "false",
+        "privileged": "false",
+        "runAsNonRoot": "false",
+        "privileged_apiGroup": "present",
+        "privileged_resources": "present",
+        "privileged_verbs": "present",
+        "automountServiceAccountToken": "true",
+        "resources_limits": "present",
+        "mount_host_system": "missing",
+        "docker_sock_volume": "missing",
+        "hardcoded_secrets": "missing",
+        "hardcoded_secrets_env_ref": "present",
+        "capabilities_add_all": "present",
+        "at_least_two_containers": "present"
+      }
+    }
+  }
+}

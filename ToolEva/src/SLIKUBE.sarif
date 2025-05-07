@@ -1,0 +1,2229 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "SLI-KUBE",
+          "organization": "PASER",
+          "rules": [
+            {
+              "id": "SLIKUBE_01",
+              "help": {
+                "text": "Specify resource limits for containers within a pod"
+              },
+              "name": " Absent Resource Limit",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Specify resource limits for containers within a pod"
+              },
+              "shortDescription": {
+                "text": "Specify resource limits for containers within a pod"
+              }
+            },
+            {
+              "id": "SLIKUBE_02",
+              "help": {
+                "text": " Use securityContext while provisioning containers"
+              },
+              "name": " Absent securityContext",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": " Use securityContext while provisioning containers"
+              },
+              "shortDescription": {
+                "text": " Use securityContext while provisioning containers"
+              }
+            },
+            {
+              "id": "SLIKUBE_03",
+              "help": {
+                "text": "Deactivate hostIPC while specifying configurations in Kubernetes manifests"
+              },
+              "name": " Activation of hostIPC",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": " Deactivate hostIPC while specifying configurations in Kubernetes manifests"
+              },
+              "shortDescription": {
+                "text": " Deactivate hostIPC while specifying configurations in Kubernetes manifests"
+              }
+            },
+            {
+              "id": "SLIKUBE_04",
+              "help": {
+                "text": " Deactivate hostNetwork while specifying configurations in Kubernetes manifests"
+              },
+              "name": " Activation of hostNetwork",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": " Deactivate hostNetwork while specifying configurations in Kubernetes manifests"
+              },
+              "shortDescription": {
+                "text": " Deactivate hostNetwork while specifying configurations in Kubernetes manifests"
+              }
+            },
+            {
+              "id": "SLIKUBE_05",
+              "help": {
+                "text": "Deactivate hostPID while specifying configurations in Kubernetes manifests"
+              },
+              "name": " Activation of hostPID",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": " Deactivate hostPID while specifying configurations in Kubernetes manifests"
+              },
+              "shortDescription": {
+                "text": " Deactivate hostPID while specifying configurations in Kubernetes manifests"
+              }
+            },
+            {
+              "id": "SLIKUBE_06",
+              "help": {
+                "text": "Avoid misuse with CAP_SYS_ADMIN, and misuse with CAP_SYS_MODULE configurations"
+              },
+              "name": " Capability Misuse",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Avoid misuse with CAP_SYS_ADMIN, and misuse with CAP_SYS_MODULE configurations"
+              },
+              "shortDescription": {
+                "text": " Avoid misuse with CAP_SYS_ADMIN, and misuse with CAP_SYS_MODULE configurations"
+              }
+            },
+            {
+              "id": "SLIKUBE_07",
+              "help": {
+                "text": "Avoid mounting of the Docker socket path by using the /var/run/docker.sock configuration"
+              },
+              "name": " Docker Socket Mounting",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Avoid mounting of the Docker socket path by using the /var/run/docker.sock configuration"
+              },
+              "shortDescription": {
+                "text": " Avoid mounting of the Docker socket path by using the /var/run/docker.sock configuration"
+              }
+            },
+            {
+              "id": "SLIKUBE_08",
+              "help": {
+                "text": " Avoid allocating privileges for child processes within a container that are higher than that of the parent processes with allowPrivilegeEscaltion : true"
+              },
+              "name": " Escalated Privileges for Child Container Processes",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": " Avoid allocating privileges for child processes within a container that are higher than that of the parent processes with allowPrivilegeEscaltion : true"
+              },
+              "shortDescription": {
+                "text": " Avoid allocating privileges for child processes within a container that are higher than that of the parent processes with allowPrivilegeEscaltion : true"
+              }
+            },
+            {
+              "id": "SLIKUBE_09",
+              "help": {
+                "text": " Avoid providing hard-coded secrets. Do not provide (i) hard-coded usernames, (ii) hard-coded passwords, and (iii) hard-coded private tokens in Kubernetes manifests."
+              },
+              "name": " Hard-coded Secret",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": " Avoid providing hard-coded secrets. Do not provide (i) hard-coded usernames, (ii) hard-coded passwords, and (iii) hard-coded private tokens in Kubernetes manifests."
+              },
+              "shortDescription": {
+                "text": " Avoid providing hard-coded secrets. Do not provide (i) hard-coded usernames, (ii) hard-coded passwords, and (iii) hard-coded private tokens in Kubernetes manifests."
+              }
+            },
+            {
+              "id": "SLIKUBE_10",
+              "help": {
+                "text": "Avoid using HTTP without SSL/TLS certificates to setup URLs or transmit traffic inside and outside the Kubernetes clusters"
+              },
+              "name": " Use of HTTP without TLS",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": " Avoid using HTTP without SSL/TLS certificates to setup URLs or transmit traffic inside and outside the Kubernetes clusters"
+              },
+              "shortDescription": {
+                "text": " Avoid using HTTP without SSL/TLS certificates to setup URLs or transmit traffic inside and outside the Kubernetes clusters"
+              }
+            },
+            {
+              "id": "SLIKUBE_11",
+              "help": {
+                "text": "Avoid using privileged securityContext in Kubernetes manifests"
+              },
+              "name": " Privileged securityContext",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Avoid using privileged securityContext in Kubernetes manifests"
+              },
+              "shortDescription": {
+                "text": "Avoid using privileged securityContext in Kubernetes manifests"
+              }
+            },
+            {
+              "id": "SLIKUBE_UNLISTED_01",
+              "help": {
+                "text": " Avoid using the default namespace"
+              },
+              "name": " Use of Default Namespace",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "  Avoid using the default namespace"
+              },
+              "shortDescription": {
+                "text": " Avoid using the default namespace"
+              }
+            },
+            {
+              "id": "SLIKUBE_UNLISTED_02",
+              "help": {
+                "text": "Use rolling update for deployment"
+              },
+              "name": " No Use of Rolling Update",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": " Use rolling update for deployment"
+              },
+              "shortDescription": {
+                "text": "  Use rolling update for deployment"
+              }
+            },
+            {
+              "id": "SLIKUBE_UNLISTED_03",
+              "help": {
+                "text": "Use network policy in pod specification"
+              },
+              "name": " No Network Policy",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": " Use network policy in pod specification"
+              },
+              "shortDescription": {
+                "text": " Use network policy in pod specification"
+              }
+            },
+            {
+              "id": "SLIKUBE_UNLISTED_04",
+              "help": {
+                "text": "Avoid Using Host Aliases"
+              },
+              "name": " Use of Host Aliases",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "Avoid Using Host Aliases"
+              },
+              "shortDescription": {
+                "text": "Avoid Using Host Aliases"
+              }
+            },
+            {
+              "id": "SLIKUBE_UNLISTED_05",
+              "help": {
+                "text": " Use Seccomp security profiles"
+              },
+              "name": " Use of unconfined seccomp profile",
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "fullDescription": {
+                "text": "  Use Seccomp security profiles"
+              },
+              "shortDescription": {
+                "text": " Use Seccomp security profiles"
+              }
+            }
+          ],
+          "version": "2.0.0",
+          "informationUri": "https://github.com/paser-group/KubeSec"
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-and-deployment\\rendered\\configmap-agent.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-and-deployment\\rendered\\configmap-agent.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-and-deployment\\rendered\\configmap.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-and-deployment\\rendered\\configmap.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-and-deployment\\rendered\\daemonset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 33
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-and-deployment\\rendered\\daemonset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-and-deployment\\rendered\\deployment.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 35
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-and-deployment\\rendered\\deployment.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-and-deployment\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-and-deployment\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-and-deployment\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-and-deployment\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-collector-logs\\rendered\\configmap-agent.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-collector-logs\\rendered\\configmap-agent.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-collector-logs\\rendered\\daemonset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 33
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-collector-logs\\rendered\\daemonset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-collector-logs\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-collector-logs\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-hostmetrics\\rendered\\configmap-agent.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-hostmetrics\\rendered\\configmap-agent.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-hostmetrics\\rendered\\daemonset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 33
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-hostmetrics\\rendered\\daemonset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-hostmetrics\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-hostmetrics\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-lifecycle-hooks\\rendered\\configmap-agent.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-lifecycle-hooks\\rendered\\configmap-agent.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-lifecycle-hooks\\rendered\\daemonset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 33
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-lifecycle-hooks\\rendered\\daemonset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-lifecycle-hooks\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-lifecycle-hooks\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-only\\rendered\\configmap-agent.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-only\\rendered\\configmap-agent.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-only\\rendered\\daemonset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 33
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-only\\rendered\\daemonset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-only\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\daemonset-only\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-only\\rendered\\configmap.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-only\\rendered\\configmap.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-only\\rendered\\deployment.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 35
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-only\\rendered\\deployment.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-only\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-only\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-only\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-only\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-otlp-traces\\rendered\\configmap.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-otlp-traces\\rendered\\configmap.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-otlp-traces\\rendered\\deployment.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 35
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-otlp-traces\\rendered\\deployment.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-otlp-traces\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-otlp-traces\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-otlp-traces\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-otlp-traces\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-use-existing-configMap\\rendered\\deployment.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 35
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-use-existing-configMap\\rendered\\deployment.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-use-existing-configMap\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-use-existing-configMap\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-use-existing-configMap\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\deployment-use-existing-configMap\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\kubernetesAttributes\\rendered\\clusterrole.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 21
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\kubernetesAttributes\\rendered\\clusterrolebinding.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\kubernetesAttributes\\rendered\\clusterrolebinding.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\kubernetesAttributes\\rendered\\configmap.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\kubernetesAttributes\\rendered\\configmap.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\kubernetesAttributes\\rendered\\deployment.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 35
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\kubernetesAttributes\\rendered\\deployment.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\kubernetesAttributes\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\kubernetesAttributes\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\kubernetesAttributes\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\kubernetesAttributes\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-only\\rendered\\configmap-statefulset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-only\\rendered\\configmap-statefulset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-only\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-only\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-only\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-only\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-only\\rendered\\statefulset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 36
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-only\\rendered\\statefulset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-with-pvc\\rendered\\configmap-statefulset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-with-pvc\\rendered\\configmap-statefulset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-with-pvc\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-with-pvc\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-with-pvc\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-with-pvc\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-with-pvc\\rendered\\statefulset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 119
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\statefulset-with-pvc\\rendered\\statefulset.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\using-GOMEMLIMIT\\rendered\\configmap.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\using-GOMEMLIMIT\\rendered\\configmap.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\using-GOMEMLIMIT\\rendered\\deployment.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 35
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\using-GOMEMLIMIT\\rendered\\deployment.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\using-GOMEMLIMIT\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 16
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\using-GOMEMLIMIT\\rendered\\service.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        },
+        {
+          "message": {
+            "text": " Use of Default Namespace"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 7
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\using-GOMEMLIMIT\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_01",
+          "ruleIndex": 11
+        },
+        {
+          "message": {
+            "text": " No Use of Network Policy"
+          },
+          "attachments": [],
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 1
+                },
+                "artifactLocation": {
+                  "uri": "D:\\PhD\\Research\\K8s-config-bugs_FSE25\\final_repo_list\\repos\\opentelemetry-helm-charts\\charts\\opentelemetry-collector\\examples\\using-GOMEMLIMIT\\rendered\\serviceaccount.yaml"
+                }
+              }
+            }
+          ],
+          "ruleId": "SLIKUBE_UNLISTED_03",
+          "ruleIndex": 13
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json"
+}

@@ -283,6 +283,8 @@ def generate_json_result_output(scan_results, file_path):
 def main(file_path, repo_path):
     start_time = time.time()
     detected_security_attacks, unmatched_test_cases = pairwise_test.main()
+    # print(detected_security_attacks)
+    # print(unmatched_test_cases)
     normalized_file_path = os.path.normpath(file_path)
     scan_results = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
@@ -330,7 +332,7 @@ def main(file_path, repo_path):
                 print("Start scan security attacks for Kubernetes pod YAML configuration scripts...")
                 #TODO: change constantsVal.SECURITY_ATTACK_NAMES to detected_security_attacks
                 for content in manifestContents:
-                    scan_result = check_secuirty_attacks.scan_security_attacks(content, roles_and_rolebindings, constantsVal.SECURITY_ATTACK_NAMES)
+                    scan_result = check_secuirty_attacks.scan_security_attacks(content, roles_and_rolebindings, detected_security_attacks)
                     # print(scan_results)
                     scan_results = [a + b for a, b in zip(scan_results, scan_result)]
             else:

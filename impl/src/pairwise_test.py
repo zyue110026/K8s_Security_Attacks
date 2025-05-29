@@ -3,6 +3,7 @@ from allpairspy import AllPairs
 import yaml
 import json
 import security_attack_constants
+import constantsVal
 
 T_WAY_PAIR_WISE_TEST = 4
 
@@ -37,7 +38,7 @@ def generate_security_parameters() -> Dict[str, List[Union[str, int, List[str]]]
 
 
 
-def generate_pairwise_test_cases(t_way_pairs = 4) -> List[Dict[str, Union[str, int]]]:
+def generate_pairwise_test_cases(t_way_pairs = T_WAY_PAIR_WISE_TEST) -> List[Dict[str, Union[str, int]]]:
     """Generate pairwise test cases from security parameters"""
     params = generate_security_parameters()
     parameters = [
@@ -186,6 +187,18 @@ def map_test_case_to_attack_pattern(test_case: Dict) -> Dict:
     
     return attack_pattern_format
 
+def deep_match(expected, actual):
+    """Recursively check if expected dict is a subset of actual dict."""
+    if isinstance(expected, dict) and isinstance(actual, dict):
+        for key, val in expected.items():
+            if key not in actual:
+                return False
+            if not deep_match(val, actual[key]):
+                return False
+        return True
+    else:
+        return str(expected).lower() == str(actual).lower()
+
 def is_attack_match(test_case: Dict, attack_name: str, attack_pattern: Dict) -> bool:
     """
     Check if a test case matches a specific attack pattern.
@@ -193,29 +206,8 @@ def is_attack_match(test_case: Dict, attack_name: str, attack_pattern: Dict) -> 
     # Convert test case to attack pattern format
     test_case_pattern = map_test_case_to_attack_pattern(test_case)
     
-    # # Special handling for ATTACK10_POD2POD
-    # if attack_name == "ATTACK10_POD2POD":
-    #     if "containers" not in test_case_pattern:
-    #         return False
-    #     if len(test_case_pattern["containers"]) < 2:
-    #         return False
-        
-    #     # Check if any container matches the attacker pattern
-    #     attacker_ctx = attack_pattern["containers"][0]["securityContext"]
-    #     for container in test_case_pattern["containers"]:
-    #         if "securityContext" in container:
-    #             container_ctx = container["securityContext"]
-    #             match = True
-    #             for key, val in attacker_ctx.items():
-    #                 if key not in container_ctx:
-    #                     match = False
-    #                     break
-    #                 if str(container_ctx[key]).lower() != str(val).lower():
-    #                     match = False
-    #                     break
-    #             if match:
-    #                 return True
-    #     return False
+   
+    # print(test_case_pattern)
     
     # Normal case - compare all fields in attack pattern
     for key, expected_val in attack_pattern.items():
@@ -231,13 +223,27 @@ def is_attack_match(test_case: Dict, attack_name: str, attack_pattern: Dict) -> 
                     return False
                 if str(test_case_pattern[key][sub_key]).lower() != str(sub_val).lower():
                     return False
-        # Handle lists (simplified comparison)
+        # # Handle lists (simplified comparison)
+        # elif isinstance(expected_val, list):
+        #     if not isinstance(test_case_pattern[key], list):
+        #         return False
+        #     # Just check if the list isn't empty
+        #     if not test_case_pattern[key]:
+        #         return False
+        # Handle lists with partial match (for volumes)   
         elif isinstance(expected_val, list):
             if not isinstance(test_case_pattern[key], list):
                 return False
-            # Just check if the list isn't empty
-            if not test_case_pattern[key]:
-                return False
+
+            # Ensure all expected items exist in the test case (deep match)
+            for expected_item in expected_val:
+                found = False
+                for test_item in test_case_pattern[key]:
+                    if deep_match(expected_item, test_item):
+                        found = True
+                        break
+                if not found:
+                    return False
         # Handle primitive values
         else:
             if str(test_case_pattern[key]).lower() != str(expected_val).lower():
@@ -262,6 +268,8 @@ def analyze_test_cases(test_cases: List[Dict]) -> Dict[str, Dict]:
     """
     results = {}
     unmatched_test_cases = []
+
+    
     
     for test_case in test_cases:
         # Find which attacks this test case matches
@@ -294,6 +302,42 @@ def save_results(results: List[Dict], filename: str = "security_analysis_results
         json.dump(results, f, indent=2)
 
 def main():
+    # test = {
+    #     "hostPID": "false",
+    #     "hostIPC": "false",
+    #     "hostNetwork": "false",
+    #     "runAsUser": 0,
+    #     "readOnlyRootFilesystem": "false",
+    #     "allowPrivilegeEscalation": "false",
+    #     "privileged": "false",
+    #     "runAsNonRoot": "false",
+    #     "privileged_apiGroup": "missing",
+    #     "privileged_resources": "missing",
+    #     "privileged_verbs": "present",
+    #     "automountServiceAccountToken": "false",
+    #     "resources_limits": "present",
+    #     "mount_host_system": "present",
+    #     "docker_sock_volume": "present",
+    #     "hardcoded_secrets": "present",
+    #     "hardcoded_secrets_env_ref": "missing",
+    #     "capabilities_add_all": "missing",
+    #     "at_least_two_containers": "missing"
+    # }
+
+    # attack2 = security_attack_constants.SECURITY_ATTACKS[constantsVal.SECURITY_ATTACK_NAMES[1]]
+    
+    # print(attack2)
+    # matched = is_attack_match(test, constantsVal.SECURITY_ATTACK_NAMES[1], attack2)
+    # for attack_name, attack_pattern in security_attack_constants.SECURITY_ATTACKS[1].items():
+    #     print(attack_name, attack_pattern)
+
+    # matched = [
+    #         (attack_name, attack_pattern)
+    #         for attack_name, attack_pattern in security_attack_constants.SECURITY_ATTACKS.items()
+    #         if is_attack_match(test, attack_name, attack_pattern)
+    #     ]
+    
+    # print(matched)
     # for tnum in range(9,20):
     # Generate pairwise test cases
     test_cases = generate_pairwise_test_cases(T_WAY_PAIR_WISE_TEST)
@@ -301,6 +345,7 @@ def main():
 
     # Analyze which test cases match security attacks
     analysis_results, unmatched_test_cases = analyze_test_cases(test_cases)
+    # print(unmatched_test_cases)
     top_keys = [key for key in analysis_results]
     # print(len(unmatched_test_cases))
     # print(f"{tnum}: {top_keys}")

@@ -118,16 +118,16 @@ def scan_security_attacks(content, roles_and_rolebindings, detectedSecurityAttac
             privileged = check_security_config.check_privileged(container_level_sc)
             # print(privileged)
 
-            # allowPrivilegeEscalation: true is required by attack 1, 2, 8, 9, 10
+            # allowPrivilegeEscalation: true is required by attack 1, 8, 9, 10
             allow_privilege_escalation = check_security_config.check_allow_privilege_escalation(container)
 
-            if privileged:
-                # start check for attack 2
-                if detectedSecurityAttacks and constantsVal.SECURITY_ATTACK_NAMES[1] in detectedSecurityAttacks:
-                    mount_docker_sock = check_security_config.check_docker_sock(content)
-                    if mount_docker_sock:
-                        attack2 += 1
-                        # print("security attack 2 found")
+            # if privileged:
+            # start check for attack 2
+            if detectedSecurityAttacks and constantsVal.SECURITY_ATTACK_NAMES[1] in detectedSecurityAttacks:
+                mount_docker_sock = check_security_config.check_docker_sock(content)
+                if mount_docker_sock:
+                    attack2 += 1
+                    # print("security attack 2 found")
 
             if privileged and allow_privilege_escalation:
                 # start check for attack 1

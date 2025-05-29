@@ -19,9 +19,9 @@ SECURITY_ATTACKS = {
             "privileged": "true",
             "runAsNonRoot": "false"
         },
-        "volumes": {
+        "volumes": [{
             "hostPath": {"path": "/"}
-        },
+        }],
         # kind: role, clusterrole
         "privilegedRole": { 
             "apiGroup": "*",
@@ -36,15 +36,15 @@ SECURITY_ATTACKS = {
             # "runAsGroup": 0 or deault value,
             "runAsUser": 0, 
             "readOnlyRootFilesystem": "false", 
-            "allowPrivilegeEscalation": "true", 
+            #"allowPrivilegeEscalation": "true", 
             "runAsNonRoot": "false"
         },
         # "volumeMounts": {
         #     "mountPath": "/var/run/docker.sock" //5
         # },
-        "volume": {
+        "volumes": [{
             "hostPath": {"path": "/var/run/docker.sock"}
-        },
+        }],
     },
 
     SECURITY_ATTACK_NAMES[2]: {
@@ -93,9 +93,9 @@ SECURITY_ATTACKS = {
             "runAsNonRoot": "false"
         },
         "automountServiceAccountToken": "true", 
-        # kind: role, clusterrole
+        # kind: role, clusterrole is privileged, first look for the service account, then looking for the rolebinding or cluster role binding to see which role or cluster role bind to this service account
         "privilegedRole": { 
-            "apiGroup": "*",
+            "apiGroup": "*",# " "
             "resources": "*",
             "verbs": "*", #["get", "list", "watch", "create", "update", "patch", "delete", "deletecollection"]]
 

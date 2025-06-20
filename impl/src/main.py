@@ -391,8 +391,7 @@ if __name__ == "__main__":
 # change the repo path for single repo
 # analyze_repo('single-repo-path')
 # change the path for repos folder
-# main('repos-folder-path')
-# file_path = "/Users/yuezhang/research/k8s-security-acctack/longhorn/deploy/prerequisite/longhorn-cifs-installation.yaml"    
+# main('repos-folder-path') 
 # file_path = "D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos/version-checker\deploy\charts/version-checker/templates\deployment.yaml"    
 
 # repo_path = "D:/PhD/Research/K8s-config-bugs_FSE25/final_repo_list/repos/version-checker"
